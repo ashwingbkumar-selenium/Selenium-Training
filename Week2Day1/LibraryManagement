@@ -1,0 +1,16 @@
+package week2.day1;
+
+public class LibraryManagement {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Object for Library class
+		Library myLibrary=new Library();
+		String book="The Second";
+		//Passed value to method in a different way
+		myLibrary.addBook(book);
+		myLibrary.issueBook();
+
+	}
+
+}
