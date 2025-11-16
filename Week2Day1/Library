@@ -1,0 +1,34 @@
+package week2.day1;
+
+import java.util.Scanner;
+
+public class Library {
+
+	//Method for Library class
+	public String addBook(String bookTitle)
+	{
+		System.out.println("Book added successfully");
+		return bookTitle;
+	}
+	public void issueBook()
+	{
+		System.out.println("Book issued successfully");
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Library obj=new Library();
+		//Method type 1
+		//System.out.println(obj.addBook("The one"));
+		
+		//Input fetched from User
+		System.out.println("Please enter the book name");
+		Scanner sc=new Scanner(System.in);
+		String secondBook=sc.next();
+		
+        String returnedTitle=obj.addBook(secondBook);
+        System.out.println("Book Name:"+" "+returnedTitle);
+        obj.issueBook();
+	}
+
+}
